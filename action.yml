@@ -1,0 +1,12 @@
+name: 'Setup Go environment'
+description: 'Setup a Go environment and add it to the PATH'
+author: 'GitHub'
+inputs: 
+  go-version:
+    description: 'The Go version to download (if necessary) and use. Supports semver spec and ranges.'
+  stable:
+    description: 'Whether to download only stable versions'
+    default: 'true'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
